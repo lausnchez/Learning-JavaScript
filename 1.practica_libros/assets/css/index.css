@@ -1,0 +1,25 @@
+body{
+    background-color: #212121;
+}
+
+#principal_container{
+    background: #3D3D3D;
+    background: linear-gradient(0deg, rgba(61, 61, 61, 1) 0%, rgba(110, 110, 110, 1) 100%);
+    border: 2px solid #dbdbdb;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
+.secondary_container{
+    background-color: #d6d6d6;
+    border: 2px solid #53698c;
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+    margin: 20px;
+    flex-grow: 1;
+}
