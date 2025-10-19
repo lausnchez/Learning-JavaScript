@@ -2,6 +2,8 @@ body{
     background-color: #212121;
 }
 
+/* PRINCIPAL CONTAINERS */
+
 #principal_container{
     background: #3D3D3D;
     background: linear-gradient(0deg, rgba(61, 61, 61, 1) 0%, rgba(110, 110, 110, 1) 100%);
@@ -19,7 +21,60 @@ body{
     border: 2px solid #53698c;
     padding: 20px;
     border-radius: 20px;
-    height: 200px;
+    height: auto;
     margin: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Left container - DATA RECEIVER */
+
+#data_inputs{
     flex-grow: 1;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select{
+    margin-bottom: 10px;
+}
+
+/* Right container - DATA VISUALIZER */
+
+#book_view{
+    padding: 20px;
+    flex-grow: 4;
+}
+
+#book_list{
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.unique_book_data{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 6px 25px -2px #686868;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.unique_book_data img{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.unique_book_data div{
+    vertical-align: center;
+    justify-content: center;
 }

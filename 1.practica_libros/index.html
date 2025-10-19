@@ -8,11 +8,55 @@
 </head>
 <body>
     <div id="principal_container">
+        
         <div  id="data_inputs" class="secondary_container">
-            <p>Prueba</p>
-        </div>    
-        <div id="book_list" class="secondary_container">
-            <p>Prueba2</p>
+            <label for="titulo_input">Titulo</label>
+            <input type="text" id="titulo_input" placeholder="Título">
+
+            <label for="autor_input">Autor</label>
+            <input type="text" id="autor_input" placeholder="Autor">
+
+            <label for="year_input">Año de publicación</label>
+            <input type="text" id="year_input" placeholder="Año de publicación">
+
+            <label for="categoria_select">Categoría</label>
+            <select name="categoria_select" id="categoria_select">
+                <option value="novela">Novela</option>
+                <option value="ciencia">Ciencia</option>
+                <option value="historia">Historia</option>
+                <option value="infantil">Infantil</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="imagen_input">Imagen de portada</label>
+            <input type="text" id="imagen_input" placeholder="Imagen de portada">
+
+            <button id="add_button">Agregar</button>
+        </div>  
+
+        <div id="book_view" class="secondary_container">
+            <input type="text" placeholder="Buscar por título...">
+            <div id="book_list">
+            <!-- Revisar borde derecho -->
+                <div class="unique_book_data">
+                    <img src="assets/images/book_placeholder.jpg" alt="Book cover">
+                    <div>
+                        <p>Título: El Señor de los anillos</p>
+                        <p>Autor: Tolkien</p>
+                        <p>Año de publicación:1980</p>
+                        <p>Categoría: Novela</p>
+                    </div>
+                </div>
+                <div class="unique_book_data">
+                    <img src="assets/images/book_placeholder.jpg" alt="Book cover">
+                    <div>
+                        <p>Título:</p>
+                        <p>Autor:</p>
+                        <p>Año de publicación:</p>
+                        <p>Categoría:</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="assets/js/index.js"></script>  
