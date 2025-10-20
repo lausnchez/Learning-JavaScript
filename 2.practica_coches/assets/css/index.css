@@ -1,0 +1,19 @@
+body{
+    background-color: crimson;
+    padding: 0px;
+}
+
+#principal_container{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car_container{
+    flex-direction: row;
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}

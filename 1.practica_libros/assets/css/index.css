@@ -40,6 +40,15 @@ label{
 
 input, select{
     margin-bottom: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 20px;
+}
+
+#add_button{
+    background-color: #3D3D3D;
+    color: white;
 }
 
 /* Right container - DATA VISUALIZER */
@@ -69,12 +78,18 @@ input, select{
 
 .unique_book_data img{
     height: 200px;
-    width: 200px;
     margin-right: 20px;
     border-radius: 20px;
+    flex-grow: 1;
 }
 
 .unique_book_data div{
     vertical-align: center;
     justify-content: center;
+    flex-grow: 7;
+}
+
+.unique_book_data button{
+    height: 40px;
+    flex-grow: 0.5;
 }
