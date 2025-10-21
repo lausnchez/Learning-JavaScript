@@ -49,6 +49,7 @@ input, select{
 #add_button{
     background-color: #3D3D3D;
     color: white;
+    height: 50px;
 }
 
 /* Right container - DATA VISUALIZER */
@@ -66,7 +67,6 @@ input, select{
 
 .unique_book_data{
     background-color: white;
-    width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-top: 5px;
@@ -74,6 +74,7 @@ input, select{
     box-shadow: 2px 6px 25px -2px #686868;
     display: flex;
     flex-flow: row wrap;
+    flex-shrink: 1;
 }
 
 .unique_book_data img{
@@ -92,4 +93,9 @@ input, select{
 .unique_book_data button{
     height: 40px;
     flex-grow: 0.5;
+    border: 0px;
+    background-color: transparent;
+    color: crimson;
+    font-weight: bolder;
+    font-size: 20px;
 }

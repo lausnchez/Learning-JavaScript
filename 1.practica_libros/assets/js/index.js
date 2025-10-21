@@ -15,14 +15,27 @@ function nuevoLibro(Libro){
     nuevoLibro.classList.add("unique_book_data");
     let contenido = `<img src="${Libro.imagen}" alt="Book cover">
                     <div>
-                        <p>Título: ${Libro.name}</p>
-                        <p>Autor: ${Libro.autor}</p>
-                        <p>Descripción:${Libro.descripcion}</p>
-                        <p>Categoría: ${Libro.categoria}</p>
+                        <p><b>Título:</b> ${Libro.name}</p>
+                        <p><b>Autor:</b> ${Libro.autor}</p>
+                        <p><b>Descripción:</b>${Libro.descripcion}</p>
+                        <p><b>Categoría:</b> ${Libro.categoria}</p>
                     </div>
-                    <button>X</button>`;
+                    <button class="btn_borrar">X</button>`;
     nuevoLibro.innerHTML = contenido;
+    nuevoLibro.setAttribute("id_libro", Libro.book_id);
+
+    const btn_borrar = nuevoLibro.querySelector(".btn_borrar");
+    btn_borrar.addEventListener("click", (e) =>{
+        borrarLibro(e.target, "375")
+    });
+
     book_container.appendChild(nuevoLibro);
 }
 
-nuevoLibro({"name":"Prueba", "autor": "Prueba autor", "descripcion":"Prueba de descripcion", "categoria": "Novela", "imagen": "assets/images/book_placeholder.jpg"});
+function borrarLibro(close_button){
+    // Conseguir el padre
+
+}
+
+
+nuevoLibro({"name":"Prueba", "autor": "Prueba autor", "descripcion":"Prueba de descripcion", "categoria": "Novela", "imagen": "assets/images/book_placeholder.jpg", "book_id": "374"});
